@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .form {
+    @apply max-w-lg mx-auto;
+  }
+
+  .form-title {
+    @apply text-2xl font-semibold text-gray-700 mb-4;
+  }
+
+  .label {
+    @apply block text-lg font-medium text-gray-800;
+  }
+
+  .input {
+    @apply border border-gray-500 rounded-md shadow-sm p-2 my-2;
+  }
+  .btn {
+    @apply font-medium rounded-lg shadow-sm border bg-green-800 text-white hover:bg-green-700 w-[50%] mx-auto py-2;
+  }
+}
