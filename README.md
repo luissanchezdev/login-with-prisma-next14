@@ -25,8 +25,8 @@ NEXTAUTH_SECRET="SECRET"
 
 Cambiar los valores del archivo .env por los propios.
 
-USER_DB: Usuario de la base de datos
-PASSWORD_USER_DB: Contraseña del usuario de la base de datos
-HOST_DB: Host, por defecto "localhost"
-PORT_DB: Puerto de la base de datos. En PostgreSQL por defecto es 5432
-NAME_DB: Nombre de la base de datos
+- USER_DB: Usuario de la base de datos
+- PASSWORD_USER_DB: Contraseña del usuario de la base de datos
+- HOST_DB: Host, por defecto "localhost"
+- PORT_DB: Puerto de la base de datos. En PostgreSQL por defecto es 5432
+- NAME_DB: Nombre de la base de datos
