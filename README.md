@@ -1,5 +1,7 @@
 ## Login with Prisma in NextJS and PostgreSQL
 
+![Screenshot at Jan 12 13-13-04](https://github.com/luissanchezdev/login-with-prisma-next14/assets/50006980/b6ffa6ac-ca40-4282-8282-c8ee7d88ae72)
+
 
 Tener instalado PostgreSQL en su computador
 
