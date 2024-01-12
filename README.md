@@ -1,33 +1,9 @@
-## Install dependencies
+## Login with Prisma in NextJS and PostgreSQL
 
-```bash
-  cd login-with-prisma-next14 && npm install
-```
 
-## Create PostgreSQL database clean
+Tener instalado PostgreSQL en su computador
 
-## Create .env
-
-Add the following:
-
-```bash
-# Environment variables declared in this file are automatically made available to Prisma.
-# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
-
-# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
-# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
-
-DATABASE_URL="postgresql://USER_DATABASE:USER_PASSWORD_DATABASE@localhost:PORT_DATABASE/NAME_DATABASE?schema=public"
-```
-Custom DATABASE_URL:
-- USER_DATABASE: Add your user database
-- USER_PASSWORD_DATABASE: Replace for your password user database
-- PORT_DATABASE: Replacer for PostgreSQL port, by default 5432
-- NAME_DATABASE: Replacer name database
-
-## Getting Started
-
-First, run the development server:
+1. Instalación de dependencias
 
 ```bash
 npm run dev
@@ -35,18 +11,20 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Create table with Prisma migrations
-
-- Added model to prisma schema.
-- Run command:
+2. Crear un archivo .env agregando los siguientes parametros personalizandolos a su configuración:
 
 ```bash
-npx prisma migrate dev --name init
+DATABASE_URL="postgresql://USER_DB:PASSWORD_USER_DB@HOST_DB:PORT_DB/NAME_DB?schema=public"
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="SECRET"
 ```
 
+Cambiar los valores del archivo .env por los propios.
+
+USER_DB: Usuario de la base de datos
+PASSWORD_USER_DB: Contraseña del usuario de la base de datos
+HOST_DB: Host, por defecto "localhost"
+PORT_DB: Puerto de la base de datos. En PostgreSQL por defecto es 5432
+NAME_DB: Nombre de la base de datos
